@@ -1,0 +1,9 @@
+{
+    "nav": [
+        [
+            "Users",
+            "admin::users",
+            "Admin"
+        ]
+    ]
+}
