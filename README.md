@@ -3,6 +3,11 @@ Admin framework for Laravel
 
 This bundle provides an admin framework for Laravel 3.
 
+**This bundle is still under active development and is not yet suitable
+for production use straight away. Developers making improvements for
+this bundle please contribute to the Github repository, if you
+can. Thanks!**
+
 It does not provide any ready-to-use component. Any bundle or
 application using the admin framework needs to provide its own admin
 pages. Using the admin framework's pluggable interface, those pages
