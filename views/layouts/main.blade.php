@@ -5,6 +5,7 @@
         <title>{{ $title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {{ Asset::container('header')->styles(); }}
+        @yield('styles')
         <meta name="robots" content="noindex, follow">
     </head>
     <body>
@@ -37,6 +38,10 @@
                                 </a>
                             </li>
                             <li class="divider"></li>
+                            <li>
+                                <a href="{{ URL::base() }}" target="_blank">
+                                    <i class="icon-home"></i> Visit site</a>
+                            </li>
                             <li>
                                 <a href="{{ URL::to_action('admin::logout')}}">
                                     <i class="icon-arrow-right"></i> Logout
@@ -123,13 +128,16 @@
             </div><!-- /.row -->
             @yield('pagination')
         </div><!--/container-->
-
-        <div class="container">
-            <footer>
-                <p><small>Copyright (c) 2013 <a href="http://www.codebinders.com">CodeBinders Web Development Services LLP</a></small></p>
+            
+            <footer class="footer">
+                <p>
+                    <small><strong><a href="https://github.com/CodeBinders/admin-framework">Admin Framework</a> for Laravel 3.</strong>
+                    Copyright (c) 2013 <a href="http://www.codebinders.com">CodeBinders Web Development Services LLP</a>
+                        | <a href="{{ URL::base() }}">Visit site</a>
+                    </small></p>
             </footer>
-        </div>
 
         {{ Asset::container('footer')->scripts(); }}
+        @yield('scripts')
     </body>
 </html>
