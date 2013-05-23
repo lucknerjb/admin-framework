@@ -131,8 +131,7 @@
             
             <footer class="footer">
                 <p>
-                    <small><strong><a href="https://github.com/CodeBinders/admin-framework">Admin Framework</a> for Laravel 3.</strong>
-                    Copyright (c) 2013 <a href="http://www.codebinders.com">CodeBinders Web Development Services LLP</a>
+                    <small><strong><a href="https://github.com/CodeBinders/admin-framework">Admin Framework</a> for Laravel 3</strong> by <a href="http://www.codebinders.com">CodeBinders</a>
                         | <a href="{{ URL::base() }}">Visit site</a>
                     </small></p>
             </footer>
