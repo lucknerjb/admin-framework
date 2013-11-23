@@ -124,9 +124,10 @@
                 <div class="well well-small">Searching for <code><em>{{ $q }}</em></code></div>
                 @endif
 
+                @yield('pagination')
                 @yield('content')
+                @yield('pagination')
             </div><!-- /.row -->
-            @yield('pagination')
         </div><!--/container-->
             
             <footer class="footer">
